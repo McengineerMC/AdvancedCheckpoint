@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 function ProductTable(props) {
     return (
-   <div style={{backgroundColor:"#8f9091",display:"flex",justifyContent:"center",border: "1px solid",width:"600px",padding:"15px"}}>
-     <table border ="1" width = "500px" style={{textAlign:"center",backgroundColor:"white"}} >
+   <div style={props.style1}>
+     <table border ="1" style={props.style2}>
         <thead>
        <tr>
-        <th style={{fontFamily:"Arial, Helvetica, sans-serif",fontStyle:"italic",fontSize:"25px"}}>Name</th>
-        <th style={{fontFamily:"Arial, Helvetica, sans-serif",fontStyle:"italic",fontSize:"25px"}}>category</th>
-        <th style={{fontFamily:"Arial, Helvetica, sans-serif",fontStyle:"italic",fontSize:"25px"}}>price</th>
+        <th style={props.style3}>Name</th>
+        <th style={props.style3}>category</th>
+        <th style={props.style3}>price</th>
        </tr>
        </thead>
        <tbody>
